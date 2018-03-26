@@ -5,5 +5,9 @@
     },
     "dependencies": {},
     "componentsDefaultDirectory": "components/{namespace}/{name}",
-    "packageManager": "npm"
+    "packageManager": "npm",
+    "dist": {
+        "entry": "src",
+        "target": "dist"
+    }
 }

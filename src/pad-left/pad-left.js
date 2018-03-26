@@ -13,18 +13,18 @@ const cache = [
     '        ',
     '         '
   ];
-  
+
   /**
    * pad a string to the left.
-   * 
+   *
    * @param {string} str string to pad
-   * @param {number} len total 
+   * @param {number} len total
    * @param {string} ch char to use for padding
    * @returns {string} modified string
    * @example
-   * leftPad('foo', 5) // => "  foo"
-   * leftPad('foobar', 6) // => "foobar"
-   * leftPad(1, 2, '0') // => "01"
+   * padLeft('foo', 5) // => "  foo"
+   * padLeft('foobar', 6) // => "foobar"
+   * padLeft(1, 2, '0') // => "01"
    */
   export default function leftPad(str: string, len: number, ch: string): string {
     if (!isString(str)) throw new Error('`str` must be a cool string');
